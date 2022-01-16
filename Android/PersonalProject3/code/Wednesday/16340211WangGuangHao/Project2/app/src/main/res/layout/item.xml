@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <!-- 定义一个用于显示头像的ImageView -->
+    <ImageView
+        android:id="@+id/myicon"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@mipmap/me"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/myicon"
+        android:textColor="#7a7a7a"
+        android:text="name"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintLeft_toRightOf="@id/myicon"
+        android:textColor="#7a7a7a"
+        android:text="date"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/says"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3e3e3e"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintLeft_toRightOf="@id/myicon"
+        android:text="comment"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/zan"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:layout_constraintBottom_toBottomOf="@id/date"
+        android:src="@mipmap/white" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textColor="#3e3e3e"
+        app:layout_constraintBottom_toBottomOf="@id/zan"
+        app:layout_constraintRight_toLeftOf="@id/zan"
+        android:text="15"
+        android:textSize="15sp" />
+
+</android.support.constraint.ConstraintLayout>

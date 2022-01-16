@@ -1,0 +1,24 @@
+﻿  GameBoard.cpp
+D:\Github\PAOGD_HW4\src\16340211WangGuangHao\snake3D\snake\ObjLoader.cpp(37,29): warning C4477:  “fscanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+D:\Github\PAOGD_HW4\src\16340211WangGuangHao\snake3D\snake\ObjLoader.cpp(37,29): message :  此参数用作缓冲区大小
+D:\Github\PAOGD_HW4\src\16340211WangGuangHao\snake3D\snake\GameBoard.cpp(33,26): warning C4305:  “初始化”: 从“double”到“float”截断
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glewInit，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glewGetErrorString，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwInit，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwTerminate，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwSetErrorCallback，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwCreateWindow，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwDestroyWindow，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwWindowShouldClose，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwPollEvents，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwSetKeyCallback，该符号在函数 "void __cdecl initOpenGLProgram(struct GLFWwindow *)" (?initOpenGLProgram@@YAXPEAUGLFWwindow@@@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwMakeContextCurrent，该符号在函数 main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwSwapBuffers，该符号在函数 "void __cdecl drawScene(struct GLFWwindow *)" (?drawScene@@YAXPEAUGLFWwindow@@@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 glfwSwapInterval，该符号在函数 main 中被引用
+Model.obj : error LNK2001: 无法解析的外部符号 __imp___glewBindBuffer
+Model.obj : error LNK2001: 无法解析的外部符号 __imp___glewBufferData
+Model.obj : error LNK2001: 无法解析的外部符号 __imp___glewGenBuffers
+Model.obj : error LNK2001: 无法解析的外部符号 __imp___glewBindVertexArray
+Model.obj : error LNK2001: 无法解析的外部符号 __imp___glewGenVertexArrays
+freeglut.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+D:\Github\PAOGD_HW4\src\16340211WangGuangHao\snake3D\x64\Debug\snake.exe : fatal error LNK1120: 18 个无法解析的外部命令

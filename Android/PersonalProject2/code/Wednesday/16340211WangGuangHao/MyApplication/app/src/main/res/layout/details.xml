@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.wang.myapplication.DetailsActivity">
+    <!--相对布局-->
+    <RelativeLayout
+        android:id="@+id/Top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark">
+
+        <!--返回-->
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/back" />
+
+        <!--星-->
+        <Button
+            android:id="@+id/Star"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="20dp"
+            android:background="@mipmap/empty_star" />
+
+        <!--名字-->
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="20dp"
+            android:textSize="25sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!--线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <!--相对布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--类别-->
+            <TextView
+                android:id="@+id/Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/category" />
+
+            <!--富含-->
+            <TextView
+                android:id="@+id/contain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Category"
+                android:layout_below="@+id/Category"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/nutrition" />
+
+            <!--营养-->
+            <TextView
+                android:id="@+id/Nutrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/contain"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:layout_toEndOf="@+id/contain"
+                android:textColor="@color/nutrition" />
+
+            <!--收藏-->
+            <Button
+                android:id="@+id/Collect"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/Category"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/collect" />
+
+            <!--竖线-->
+            <View
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/Collect"
+                android:layout_marginEnd="18dp"
+                android:layout_toStartOf="@+id/Collect"
+                android:background="@color/line" />
+
+            <!--横线-->
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignStart="@+id/contain"
+                android:layout_below="@+id/contain"
+                android:layout_marginTop="10dp"
+                android:background="@color/line" />
+
+        </RelativeLayout>
+
+        <!--更多资料-->
+        <ListView
+            android:id="@+id/moreinfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line" />
+
+        <!--横分隔线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/line" />
+
+        <!--其余选项-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview" />
+    </LinearLayout>
+
+</LinearLayout>

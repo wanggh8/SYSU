@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyDrive</string>
+    <string name="download">下载</string>
+    <string name="drive">网盘</string>
+    <string name="file">本地</string>
+    <string name="play">播放</string>
+    <string name="personal">我的</string>
+    <string name="link">连接</string>
+    <string name="onedrive">OneDrive</string>
+    <string name="setDefault">设为默认</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="device_network_not_available">网络未连接</string>
+</resources>

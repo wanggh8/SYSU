@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:orientation="vertical">
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        android:id="@+id/title_bar_main_drive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="@string/drive"
+        app:centerTextColor="@color/colorMainTextView"
+        app:centerType="textView"
+        app:fillStatusBar="true"
+        app:statusBarColor="@color/white"
+        app:titleBarColor="@color/white" />
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xRefreshView"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView
+            android:id="@+id/rv_main_drive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>

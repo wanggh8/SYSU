@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>canvas代码流动态效果</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript">
+		//获取屏幕大小
+		var s = window.screen;
+		var winW = s.width;
+		var winH = s.height;
+		//设置画布大小
+		var canvas = document.getElementById("canvas");
+		canvas.width = winW;
+		canvas.height = winH;
+		var cxt = canvas.getContext("2d");
+
+		var fontSize = 14;
+		var str = "0123456789qwertyuiopasdfghjklllzxcvbnm!@#$%^&*()_";
+		var txts = str.split("");
+		//共有多少行
+		var cols = Math.floor(winW/fontSize);
+		var drop = [];
+		for(var i=0;i<cols;i++){
+			//Y轴初始化位置
+			drop.push(Math.floor(Math.random()*-100));
+		}
+
+		function draw(){
+			//背景填充
+			cxt.fillStyle = "rgba(59,160,247,0.05)";
+			cxt.fillRect(0,0,winW,winH);
+
+			//字体颜色
+			cxt.fillStyle = "#ffffff";
+			//字体
+			cxt.font = "300px " + fontSize + "px 微软雅黑";
+			for(var i=0;i<drop.length;i++){
+				//设置绘画的文字
+				cxt.fillText(txts[Math.floor(Math.random()*txts.length)],i*fontSize,drop[i]*fontSize);
+				//如果绘满一屏或随机数大于0.95（此数可自行调整，效果会不同）
+				if(drop[i]*fontSize > winH || Math.random() > 0.92){
+					drop[i] = 0;
+				}
+				//用于Y轴坐标增加
+				drop[i]++;
+			}
+			
+		}
+
+		setInterval(draw,33);
+	</script>
+</body>
+</html>
+ 

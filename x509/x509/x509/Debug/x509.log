@@ -1,0 +1,3 @@
+﻿  main.cpp
+d:\github\x509\x509\x509\main.cpp(296): warning C4018: “<”: 有符号/无符号不匹配
+  x509.vcxproj -> D:\Github\x509\x509\Debug\x509.exe

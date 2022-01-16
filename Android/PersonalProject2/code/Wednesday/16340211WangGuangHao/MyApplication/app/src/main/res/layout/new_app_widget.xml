@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id = "@+id/new_app_widget"
+    android:layout_height="match_parent"
+    android:background="@color/wu"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/appwidget_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:maxHeight="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="5dp"
+        android:maxWidth="40dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/full_star" />
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/appwidget_text"
+        android:background="@color/wu"
+        android:text="@string/appwidget_text"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/appwidget_image"/>
+
+
+
+</RelativeLayout>

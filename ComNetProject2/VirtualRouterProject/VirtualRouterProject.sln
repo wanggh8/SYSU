@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualRouterProject", "VirtualRouterProject\VirtualRouterProject.vcxproj", "{924F12F1-04B0-46FE-B008-D811D917F564}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Debug|x64.ActiveCfg = Debug|x64
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Debug|x64.Build.0 = Debug|x64
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Debug|x86.ActiveCfg = Debug|Win32
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Debug|x86.Build.0 = Debug|Win32
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Release|x64.ActiveCfg = Release|x64
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Release|x64.Build.0 = Release|x64
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Release|x86.ActiveCfg = Release|Win32
+		{924F12F1-04B0-46FE-B008-D811D917F564}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A5F0B18-6B9C-418C-BFDE-82BDE93A195E}
+	EndGlobalSection
+EndGlobal

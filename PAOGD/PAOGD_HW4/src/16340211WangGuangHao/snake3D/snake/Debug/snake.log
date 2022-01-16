@@ -1,0 +1,3 @@
+﻿  GameBoard.cpp
+D:\Github\PAOGD_HW4\src\16340211WangGuangHao\snake3D\snake\GameBoard.cpp(33,26): warning C4305:  “初始化”: 从“double”到“float”截断
+  snake.vcxproj -> D:\Github\PAOGD_HW4\src\16340211WangGuangHao\snake3D\Debug\snake.exe

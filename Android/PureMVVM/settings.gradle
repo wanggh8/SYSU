@@ -1,0 +1,3 @@
+include ':puremvvm'
+include ':app'
+rootProject.name = "PureMVVM"

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="New_p">New Password</string>
+    <string name="Con_p">Confirm Password</string>
+    <string name="OK">OK</string>
+    <string name="SAVE">SAVE</string>
+    <string name="LOAD">LOAD</string>
+    <string name="CLEAR">CLEAR</string>
+</resources>
